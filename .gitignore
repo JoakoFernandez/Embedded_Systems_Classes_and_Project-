@@ -1,0 +1,4 @@
+.theia/
+*.bak
+*.tmp
+build/
