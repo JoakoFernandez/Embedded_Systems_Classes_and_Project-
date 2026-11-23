@@ -2,3 +2,4 @@
 *.bak
 *.tmp
 build/
+arduino_secrets.h

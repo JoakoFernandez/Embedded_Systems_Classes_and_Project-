@@ -4,10 +4,8 @@
   Be sure to check out other examples!
  *************************************************************/
 
-/* Fill-in information from Blynk Device Info here */
-#define BLYNK_TEMPLATE_ID           "TMPL6xjUDhMPg"
-#define BLYNK_TEMPLATE_NAME         "Quickstart Template"
-#define BLYNK_AUTH_TOKEN            "94JMP1qvX3SIOWEnFoEarErMvrC_h61J"
+/* Credentials live in arduino_secrets.h (kept out of GitHub) */
+#include "arduino_secrets.h"   // BLYNK_TEMPLATE_ID / NAME / AUTH_TOKEN, SECRET_SSID / PASS
 
 /* Comment this out to disable prints and save space */
 #define BLYNK_PRINT Serial
@@ -25,8 +23,8 @@ DHT dht(DHTTYPE);
 
 // Your WiFi credentials.
 // Set password to "" for open networks.
-char ssid[] = "S23FE";
-char pass[] = "joaquin:)";
+char ssid[] = SECRET_SSID;
+char pass[] = SECRET_PASS;
 
 BlynkTimer timer;
 
